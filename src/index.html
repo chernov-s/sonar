@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #canvas {
+        border: 1px solid #ccc;
+    }
+</style>
+<body>
+<canvas id="canvas" width="600" height="600"></canvas>
+</body>
+<script src="js/app.js"></script>
+<script>
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d'),
+        width = canvas.clientWidth,
+        height = canvas.clientHeight,
+        app = Sonar(width,height);
+
+    app.context(ctx);
+    app.run();
+</script>
+</html>
